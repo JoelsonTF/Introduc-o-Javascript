@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(-45deg, #5e0878, #085078, #4ca59b, #1fa194);
+    background-size: 400% 400%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    animation: backgroundTransition 8s ease-in-out infinite;
+}
+
+button {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid lightcoral;
+    background-color: rgb(241, 214, 214);
+    color: lightcoral;
+    font-size: 16pt;
+    font-weight: 600;
+    text-align: center;
+}
+
+button:disabled {
+    background-color: lightgray;
+    color: gray;
+    border-color: gray;
+}
+
+
+#counter {
+    display: flex;
+}
+
+#currentNumber {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    font-size: 16pt;
+}
+
+@keyframes backgroundTransition {
+    0%{
+        background-position: 0% 80%;
+    }
+    50%{
+        background-position: 80% 100%;
+    }
+    100%{
+        background-position: 0% 90%;
+    }
+    
